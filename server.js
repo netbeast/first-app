@@ -1,7 +1,7 @@
 /* Requires node.js libraries */
 var http = require('http');
 var fs = require('fs');
-var argv = require('optimist').argv; // must-have package
+var argv = require('minimist')(process.argv.slice(2)); // must-have package
 var colors = require('colors'); // just to make a colourful prompt
 
 /* xbian apps need to accept the port to be launched by parameters */
