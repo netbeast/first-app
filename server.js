@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 /* Requires node.js libraries */
 var http = require('http');
 var fs = require('fs');
@@ -15,7 +17,6 @@ if(isNaN(port)) {
 	success = "Listening on port " + port;
 	console.log(success.green);
 }
-
 
 http.createServer(function(request, response) {  
 	/* index.html is an user interface example */
