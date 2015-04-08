@@ -1,0 +1,165 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', 'xway', '-g' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.38
+4 verbose node symlink /usr/bin/node
+5 verbose cache add [ 'xway', null ]
+6 verbose cache add name=undefined spec="xway" args=["xway",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'xway',
+7 verbose parsed url   path: 'xway',
+7 verbose parsed url   href: 'xway' }
+8 silly lockFile fe117a8f-xway xway
+9 verbose lock xway /home/drmandingo/.npm/fe117a8f-xway.lock
+10 silly lockFile fe117a8f-xway xway
+11 silly lockFile fe117a8f-xway xway
+12 verbose addNamed [ 'xway', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile 5605bce7-xway xway@
+15 verbose lock xway@ /home/drmandingo/.npm/5605bce7-xway.lock
+16 silly addNameRange { name: 'xway', range: '*', hasData: false }
+17 verbose request where is /xway
+18 verbose request registry https://registry.npmjs.org/
+19 verbose request id 7d5047c2052dc037
+20 verbose url raw /xway
+21 verbose url resolving [ 'https://registry.npmjs.org/', './xway' ]
+22 verbose url resolved https://registry.npmjs.org/xway
+23 verbose request where is https://registry.npmjs.org/xway
+24 info trying registry request attempt 1 at 17:08:30
+25 http GET https://registry.npmjs.org/xway
+26 http 200 https://registry.npmjs.org/xway
+27 silly registry.get cb [ 200,
+27 silly registry.get   { date: 'Wed, 08 Apr 2015 15:08:31 GMT',
+27 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+27 silly registry.get     etag: '"7ZWRVDQINLNQ4BODB1C9ID597"',
+27 silly registry.get     'content-type': 'application/json',
+27 silly registry.get     'cache-control': 'max-age=60',
+27 silly registry.get     'content-length': '11734',
+27 silly registry.get     'accept-ranges': 'bytes',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     age: '0',
+27 silly registry.get     'x-served-by': 'cache-ams4146-AMS',
+27 silly registry.get     'x-cache': 'MISS',
+27 silly registry.get     'x-cache-hits': '0',
+27 silly registry.get     'x-timer': 'S1428505711.044349,VS0,VE386',
+27 silly registry.get     vary: 'Accept',
+27 silly registry.get     'keep-alive': 'timeout=10, max=50',
+27 silly registry.get     connection: 'Keep-Alive' } ]
+28 silly addNameRange number 2 { name: 'xway', range: '*', hasData: true }
+29 silly addNameRange versions [ 'xway',
+29 silly addNameRange   [ '1.0.0',
+29 silly addNameRange     '1.0.1',
+29 silly addNameRange     '1.0.2',
+29 silly addNameRange     '1.0.3',
+29 silly addNameRange     '1.0.4',
+29 silly addNameRange     '1.0.5',
+29 silly addNameRange     '1.0.6',
+29 silly addNameRange     '1.0.8',
+29 silly addNameRange     '1.1.0' ] ]
+30 verbose addNamed [ 'xway', '1.1.0' ]
+31 verbose addNamed [ '1.1.0', '1.1.0' ]
+32 silly lockFile b20760e5-xway-1-1-0 xway@1.1.0
+33 verbose lock xway@1.1.0 /home/drmandingo/.npm/b20760e5-xway-1-1-0.lock
+34 silly lockFile 8933467f-ry-npmjs-org-xway-xway-1-1-0-tgz https://registry.npmjs.org/xway/-/xway-1.1.0.tgz
+35 verbose lock https://registry.npmjs.org/xway/-/xway-1.1.0.tgz /home/drmandingo/.npm/8933467f-ry-npmjs-org-xway-xway-1-1-0-tgz.lock
+36 verbose addRemoteTarball [ 'https://registry.npmjs.org/xway/-/xway-1.1.0.tgz',
+36 verbose addRemoteTarball   '2ccaace18f47249c19a0abf54c599d04e0841236' ]
+37 info retry fetch attempt 1 at 17:08:31
+38 verbose fetch to= /tmp/npm-22361-joPpdQXl/registry.npmjs.org/xway/-/xway-1.1.0.tgz
+39 http GET https://registry.npmjs.org/xway/-/xway-1.1.0.tgz
+40 http 200 https://registry.npmjs.org/xway/-/xway-1.1.0.tgz
+41 silly lockFile 8933467f-ry-npmjs-org-xway-xway-1-1-0-tgz https://registry.npmjs.org/xway/-/xway-1.1.0.tgz
+42 silly lockFile 8933467f-ry-npmjs-org-xway-xway-1-1-0-tgz https://registry.npmjs.org/xway/-/xway-1.1.0.tgz
+43 silly lockFile b20760e5-xway-1-1-0 xway@1.1.0
+44 silly lockFile b20760e5-xway-1-1-0 xway@1.1.0
+45 silly lockFile 5605bce7-xway xway@
+46 silly lockFile 5605bce7-xway xway@
+47 silly resolved [ { name: 'xway',
+47 silly resolved     version: '1.1.0',
+47 silly resolved     description: 'xway package manager, client tool',
+47 silly resolved     main: 'main.js',
+47 silly resolved     dependencies:
+47 silly resolved      { colors: '^1.0.3',
+47 silly resolved        'fs-extra': '^0.18.0',
+47 silly resolved        minimist: '^1.1.0',
+47 silly resolved        rimraf: '^2.3.2',
+47 silly resolved        'tar.gz': '^0.1.1' },
+47 silly resolved     devDependencies: {},
+47 silly resolved     scripts: { test: 'node test.js' },
+47 silly resolved     bin: { xway: 'main.js' },
+47 silly resolved     repository:
+47 silly resolved      { type: 'git',
+47 silly resolved        url: 'https://github.com/netbeast-co/xy-package-manager' },
+47 silly resolved     keywords:
+47 silly resolved      [ 'iot',
+47 silly resolved        'node',
+47 silly resolved        'xway',
+47 silly resolved        'xyos',
+47 silly resolved        'makers',
+47 silly resolved        'raspberry',
+47 silly resolved        'pi',
+47 silly resolved        'raspi',
+47 silly resolved        'arduino' ],
+47 silly resolved     author: { name: 'jesus@netbeast.co' },
+47 silly resolved     license: 'Apache V2',
+47 silly resolved     bugs: { url: 'https://github.com/netbeast-co/bpm/issues' },
+47 silly resolved     homepage: 'https://github.com/netbeast-co/bpm',
+47 silly resolved     gitHead: 'd34c74381bc4c044ed7cdde2fa6251a12199bce8',
+47 silly resolved     _id: 'xway@1.1.0',
+47 silly resolved     _shasum: '2ccaace18f47249c19a0abf54c599d04e0841236',
+47 silly resolved     _from: 'xway@',
+47 silly resolved     _npmVersion: '2.7.0',
+47 silly resolved     _nodeVersion: '0.10.34',
+47 silly resolved     _npmUser: { name: 'jesusdario', email: 'jesus@netbeast.co' },
+47 silly resolved     maintainers: [ [Object] ],
+47 silly resolved     dist:
+47 silly resolved      { shasum: '2ccaace18f47249c19a0abf54c599d04e0841236',
+47 silly resolved        tarball: 'http://registry.npmjs.org/xway/-/xway-1.1.0.tgz' },
+47 silly resolved     directories: {},
+47 silly resolved     _resolved: 'https://registry.npmjs.org/xway/-/xway-1.1.0.tgz' } ]
+48 info install xway@1.1.0 into /usr/lib
+49 info installOne xway@1.1.0
+50 verbose lib/node_modules/xway unbuild
+51 verbose tar unpack /home/drmandingo/.npm/xway/1.1.0/package.tgz
+52 silly lockFile 700546a6-tar-usr-lib-node-modules-xway tar:///usr/lib/node_modules/xway
+53 verbose lock tar:///usr/lib/node_modules/xway /home/drmandingo/.npm/700546a6-tar-usr-lib-node-modules-xway.lock
+54 silly lockFile 1ce9215e-dingo-npm-xway-1-1-0-package-tgz tar:///home/drmandingo/.npm/xway/1.1.0/package.tgz
+55 verbose lock tar:///home/drmandingo/.npm/xway/1.1.0/package.tgz /home/drmandingo/.npm/1ce9215e-dingo-npm-xway-1-1-0-package-tgz.lock
+56 silly gunzTarPerm modes [ '775', '664' ]
+57 error Error: EACCES, mkdir '/usr/lib/node_modules/xway'
+57 error  { [Error: EACCES, mkdir '/usr/lib/node_modules/xway']
+57 error   errno: 3,
+57 error   code: 'EACCES',
+57 error   path: '/usr/lib/node_modules/xway',
+57 error   fstream_type: 'Directory',
+57 error   fstream_path: '/usr/lib/node_modules/xway',
+57 error   fstream_class: 'DirWriter',
+57 error   fstream_stack:
+57 error    [ '/usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+57 error      '/usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+57 error      'Object.oncomplete (fs.js:108:15)' ] }
+58 error Please try running this command again as root/Administrator.
+59 error System Linux 3.13.0-46-generic
+60 error command "/usr/bin/node" "/usr/bin/npm" "install" "xway" "-g"
+61 error cwd /home/drmandingo/Development/get-started
+62 error node -v v0.10.38
+63 error npm -v 1.4.28
+64 error path /usr/lib/node_modules/xway
+65 error fstream_path /usr/lib/node_modules/xway
+66 error fstream_type Directory
+67 error fstream_class DirWriter
+68 error code EACCES
+69 error errno 3
+70 error stack Error: EACCES, mkdir '/usr/lib/node_modules/xway'
+71 error fstream_stack /usr/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+71 error fstream_stack /usr/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+71 error fstream_stack Object.oncomplete (fs.js:108:15)
+72 verbose exit [ 3, true ]
