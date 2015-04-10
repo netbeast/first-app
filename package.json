@@ -4,6 +4,7 @@
   "description": "A repo with code about how to make simple xway apps.",
   "main": "server.js",
   "dependencies": {
+    "express": "^4.12.3",
     "minimist": "^1.1.0"
   },
   "devDependencies": {},

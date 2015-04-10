@@ -1,32 +1,43 @@
 #!/usr/bin/env node
 
-// xyos apps must be executable
-// and carry this upper shebang! with them
+// server.js
+//===========
+
+/*
+* This is where all the magic happens.
+* The xway dashboard calls this script as is
+* `node server.js --port <free port number>`
+* after that everyline here will be executed.
+*
+* You can install extra modules thanks to the work
+* of npm. Also you can create a shell script to
+* install any missing system package.
+*/
 
 /* Requires node.js libraries */
-var http = require('http');
 var fs = require('fs');
-var argv = require('minimist')(process.argv.slice(2));
+var express = require('express');
+var app = express();
 
-// xyos apps can accept port through parameters like: --port <free port>
-// no configuration needed
+var argv = require('minimist')(process.argv.slice(2)); // must-have package
+
+/* xyos apps need to accept the port to be launched by parameters */
 port = argv.port;
+
 if(isNaN(port)) {
-	console.log("Port \"%s\" is not a number.", port);
+	console.log("Port \"" + port + "\" is not a number.");
 	process.kill(1);
 } else {
-	console.log("Listening on port %s", port);
+	console.log("Listening on port " + port);
 }
 
-http.createServer(function(request, response) {  
-	// index.html is an user interface example
-	// you can choose from any web app framework you want
-	// or even not having a user interface is fine!
-	fs.readFile('index.html', 'utf8', function (error, data) {
-		if (error)
-			return console.error(error);
-		response.writeHeader(200, {"Content-Type": "text/html"});  
-		response.write(data);  
-		response.end();  
-	});
-}).listen(port);
+app.use(express.static('public'));
+
+var server = app.listen(port, function () {
+
+  var host = server.address().address;
+  var port = server.address().port;
+
+  console.log('Example app listening at http://%s:%s', host, port);
+
+});
