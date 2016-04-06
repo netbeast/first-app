@@ -1,5 +1,5 @@
 {
-  "name": "xy-get-started",
+  "name": "get-started",
   "version": "1.0.0",
   "description": "A repo with code about how to make simple xway apps.",
   "main": "server.js",
